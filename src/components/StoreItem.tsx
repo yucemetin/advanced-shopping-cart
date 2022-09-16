@@ -13,7 +13,7 @@ export default function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
     const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart()
     const quantity: number = getItemQuantity(id)
     return (
-        <Card className="h-100 shadow-sm">
+        <Card style={{minHeight : "380px"}} className="h-200 shadow-sm">
             <Card.Img variant="top" src={imgUrl} height="200px" style={{ objectFit: "cover" }} />
             <Card.Body>
                 <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">

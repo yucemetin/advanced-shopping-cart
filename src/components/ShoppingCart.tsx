@@ -21,7 +21,7 @@ export default function ShoppingCart({ isOpen }: ShoppingCartProps) {
                     {cartItems.map(item => (
                         <CartItem key={item.id} {...item} />
                     ))}
-                    <div style={{ position: "absolute", bottom: 0, right: 10 }} className="ms-outo fw-bold fs-5">
+                    <div style={{ position: "absolute", bottom: 30, right: 10 }} className="ms-outo fw-bold fs-5">
                         Total: {formatCurrency(cartItems.reduce((total, cartItem) => {
                             const item = storeItems.find(i => i.id === cartItem.id)
                             return total + (item?.price || 0) * cartItem.quantity

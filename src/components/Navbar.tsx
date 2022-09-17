@@ -1,13 +1,13 @@
-import { Navbar as NavbarBs, Nav, Container, Button } from "react-bootstrap"
+import { Navbar as NavbarBs, Nav, Container, Button, FormControl } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 
 export default function Navbar() {
     const { openCart, cartQuantitiy } = useShoppingCart()
     return (
-        <NavbarBs style={{minHeight: "70px"}} sticky="top" className="bg-white shadow-sm mb-3">
-            <Container>
-                <Nav className="me-auto">
+        <NavbarBs style={{ minHeight: "70px" }} sticky="top" className="bg-white shadow-sm mb-3">
+            <Container className="d-flex justify-content-between">
+                <Nav className="justify-content-start">
                     <Nav.Link to="/" as={NavLink} end>
                         Home
                     </Nav.Link>

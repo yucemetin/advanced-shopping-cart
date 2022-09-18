@@ -14,9 +14,6 @@ export default function Navbar() {
                     <Nav.Link to="/store" as={NavLink}>
                         Store
                     </Nav.Link>
-                    <Nav.Link to="/about" as={NavLink}>
-                        About
-                    </Nav.Link>
                 </Nav>
                 {cartQuantitiy > 0 && (
                     <Button onClick={openCart} style={{ width: "3rem", height: "3rem", position: "relative" }} variant="outline-primary" className="rounded-circle">

@@ -31,7 +31,7 @@ export default function NotFound() {
                 <div className="error__content">
                     <div className="error__message message">
                         <h1 className="message__title">Page Not Found</h1>
-                        <p className="message__text">We're sorry, the page you were looking for isn't found here. The link you followed may either be broken or no longer exists. Please try again, or take a look at our.</p>
+                        <p className="message__text">We're sorry, the page you were looking for isn't found here. The link you followed may either be broken or no longer exists. Please try again, or go home page.</p>
                     </div>
                     <div className="error__nav e-nav">
                         <a onClick={handleClick} target="_blanck" className="e-nav__link"></a>

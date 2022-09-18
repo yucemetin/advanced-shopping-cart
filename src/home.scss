@@ -29,6 +29,7 @@
     line-height: 0;
     text-align: center;
     text-decoration: none;
+    margin: 20px;
 
     &:before {
       content: "";
@@ -42,6 +43,7 @@
       border-radius: 100px;
       background-color: #1f2027;
       transition: all 400ms;
+
     }
 
     &:after {
